@@ -1,5 +1,3 @@
-오리진의 Cache-Control, Expires와 CloudFront의 TTL에 의한 캐시 시간
-
 ## Cache-Control 헤더와 TTL에 따른 캐싱
 
 - 오리진에 Cache-Control: max-age 헤더가 있는 경우
