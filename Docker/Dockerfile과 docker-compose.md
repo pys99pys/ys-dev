@@ -1,5 +1,3 @@
-# Dockerfile과 docker-compose
-
 ## Dockerfile
 
 - base image를 이용하여 개발된 새로운 image를 만드는 일련의 과정들을 작성해둔 파일
