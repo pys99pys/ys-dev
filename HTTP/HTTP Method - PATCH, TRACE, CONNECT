@@ -1,6 +1,10 @@
+## HEAD
+
+헤더만 요청할 때 사용, 멱등(idempotent) o, 안전(safe) o
+
 ## PATCH
 
-리소스 부분 수정 요청시 사영, 멱등(idempotent) x, 안전(safe) x
+리소스 부분 수정 요청시 사용, 멱등(idempotent) x, 안전(safe) x
 
 ## TRACE
 
