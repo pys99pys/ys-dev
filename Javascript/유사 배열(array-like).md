@@ -19,7 +19,7 @@ Array.prototype 메서드(map, filter, reduce 등)를 직접 호출할 수 없�
 일반 객체와는 달리 숫자 인덱스를 키로 사용하고 이를 기반으로 동작
 
 ## 대표적인 유사 배열
-
+
 ### 1. arguments 객체
 
 ```
