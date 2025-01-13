@@ -1,52 +1,73 @@
 ## unknown
 
-- unknown 은 타입스크립트의 Top-Type
-- 타입스크립트에 존재하는 모든 타입을 할당 할 수 있음
-- 따라서 모든 타입의 공통적인 연산밖에 할 수 없음
+### 특징
+
+- 가장 넓은 범위를 가지는 타입(unknown은 모든 타입의 슈퍼 타입)
+- 모든 값이 할당 가능하지만 unknown으로 선언된 값을 사용할 때는 타입 검증이 필요함
+
+### 예시
 
 ```
-let foo: unknown = 'bar';
+let value: unknown;
 
-foo = 10; // ok
-foo = ['hello', 'world']; // ok
+// 어떤 값이든 할당 가능
+value = 42;
+value = "hello";
+value = { key: "value" };
 
-// 공통된 연산 외에는 할 수 없다. 
+// 사용하려면 타입 검증이 필요
+if (typeof value === "string") {
+  console.log(value.toUpperCase()); // "HELLO"
+}
 
-foo[0]; // Error 
-foo(); // Error 
-foo.bar // Error 
-
-// 타입이 지정된 변수에 할당 할 수 없다. 
-
-let bar: boolean = foo; // Error !! 
-// foo 변수의 타입이 unknown 이기 때문에 boolean 타입의 변수에 할당 할 수 없다.
-
-// 할당하기 위해서는 아래와 같이 타입을 명시해줘야 한다.
-let bar: boolean = (foo as boolean);
+### 정리
+- 안전한 타입으로 타입을 좁히기 전까지는 사용 불가
+- 런타임에서 타입이 결정되는 상황에 적합
 ```
 
 ## never
 
-- 모든 타입의 하위 타입
-- 따라서 그 어떤 값도 Never 타입에 할당 할 수 없음
+### 특징
+
+- 가장 좁은 범위를 가지는 타입(never는 모든 타입의 서브 타입)
+- 절대 값이 존재하지 않는 타입으로,절대 실행되지 않거나 반환되지 않는 코드를 표현할 때 사용
+
+### 예시
+
+**절대 반환되지 않는 함수**
 
 ```
-let foo : never = 'bar'; // Error
-let bar : never = 10; // Error 
+function throwError(message: string): never {
+  throw new Error(message);
+}
 ```
 
-### 사용처
-
-함수가 아무것도 반환하지 않을 때 -> never 를 반환타입으로 지정하여 타입추론 예외를 제거
+**끝없는 루프**
 
 ```
-function throwError(errorMsg: string): never { 
-  throw new Error(errorMsg); 
-} 
+function infiniteLoop(): never {
+  while (true) {}
+}
 ```
 
-### 특정 타입 값을 할당받지 못하게 할 때
+**타입 가드에서 불가능한 상태**
 
 ```
-type NonString<T> = T extends string ? never : T;
+type Shape = "circle" | "square";
+
+function getArea(shape: Shape) {
+  if (shape === "circle") {
+    return Math.PI * 2;
+  } else if (shape === "square") {
+    return 4;
+  }
+
+  // shape가 "circle" 또는 "square"가 아니면 이 코드는 실행되지 않음
+  const _exhaustiveCheck: never = shape; 
+}
 ```
+
+### 정리
+
+- 실행되지 않는 코드 경로나 반환하지 않는 함수에서 사용
+- 타입 체크에서 논리적으로 불가능한 상태를 명시하는 데 유용
