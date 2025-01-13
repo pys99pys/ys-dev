@@ -1,4 +1,4 @@
-## WebRTC(Web Real-Time Communication)
+# WebRTC(Web Real-Time Communication)
 
 브라우저 간, 또는 브라우저와 네이티브 애플리케이션 간의 실시간 커뮤니케이션을 지원하는 기술
 
