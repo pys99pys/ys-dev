@@ -1,4 +1,4 @@
-## AMP(Accelerated Mobile Pages)
+# AMP(Accelerated Mobile Pages)
 
 빠르고 간소화된 모바일 웹 경험을 제공하기 위해 Google과 여러 파트너들이 개발한 오픈소스 프레임워크
 
