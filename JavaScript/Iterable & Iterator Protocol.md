@@ -1,4 +1,4 @@
-# 이터러블&이터레이터 프로토콜(Iterable&Iterator Protocol)
+# Iterable & Iterator Protocol
 
 자바스크립트에서 객체가 반복(iteration) 가능한 객체로 작동하게 만드는 개념
 
