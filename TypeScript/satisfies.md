@@ -37,7 +37,7 @@ const invalidUser = {
 } satisfies User; // 오류 발생! `age` 속성이 누락됨
 ```
 
-### 문제 해결
+## 문제 해결
 
 ### 문제
 
