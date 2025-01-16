@@ -1,4 +1,4 @@
-# 버추얼 돔(Virtual DOM)
+# VirtualDOM
 
 웹 애플리케이션에서 효율적으로 UI를 업데이트하기 위한 기법
 
