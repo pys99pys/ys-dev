@@ -1,4 +1,4 @@
-## 명령형 프로그래밍 (Imperative Programming)
+## 명령형 프로그래밍(Imperative Programming)
 
 ### 요약
 
@@ -26,7 +26,7 @@ for (let i = 0; i < numbers.length; i++) {
 console.log(sum); // 15
 ```
 
-## 선언형 프로그래밍 (Declarative Programming)
+## 선언형 프로그래밍(Declarative Programming)
 
 ### 요약
 
