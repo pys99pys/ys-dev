@@ -1,4 +1,4 @@
-# Stale-While-Revalidate, Stale-If-Error 헤더
+# Stale-While-Revalidate, Stale-If-Error Header
 
 ## stale-while-revalidate
 
