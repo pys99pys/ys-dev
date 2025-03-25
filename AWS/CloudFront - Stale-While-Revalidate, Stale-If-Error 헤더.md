@@ -1,3 +1,5 @@
+# Stale-While-Revalidate, Stale-If-Error 헤더
+
 ## stale-while-revalidate
 
 오리진에서 객체를 응답하는 동안 비동기적으로 캐시된 객체를 제공
