@@ -1,3 +1,5 @@
+# Attribute vs Property
+
 ## Attribute 
 
 - HTML 문서에 정의된 속성
