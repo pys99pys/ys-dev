@@ -1,3 +1,5 @@
+# HTTP vs HTTPS
+
 웹 통신에 사용되는 프로토콜, HTTPS는 HTTP의 보안 버전
 
 ## HTTP(Hypertext Transfer Protocol)
