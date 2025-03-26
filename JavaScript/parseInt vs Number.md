@@ -1,3 +1,5 @@
+# parseInt vs Number
+
 ## parseInt
 
 ### 특징
