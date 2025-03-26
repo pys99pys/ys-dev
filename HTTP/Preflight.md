@@ -46,4 +46,4 @@ Access-Control-Allow-Headers: Content-Type, Authorization
   - 메서드: GET, POST 사용
   - 헤더: Content-Type을 application/x-www-form-urlencoded로 맞추기
   - 커스텀 헤더 최소화
-서버에서 OPTIONS 요청에 대한 CORS 헤더를 캐시 설정(Access-Control-Max-Age) 해주면 성능 향상
+- 서버에서 OPTIONS 요청에 대한 CORS 헤더를 캐시 설정(Access-Control-Max-Age) 해주면 성능 향상
