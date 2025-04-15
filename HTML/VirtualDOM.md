@@ -8,7 +8,7 @@ React와 같은 라이브러리에서 자주 사용됨
 
 ## 개념
 
-**DOM (Document Object Model)**은 웹 페이지의 HTML 구조를 표현하는 객체 모델
+DOM(Document Object Model)은 웹 페이지의 HTML 구조를 표현하는 객체 모델
 
 그러나 실제 DOM을 변경하는 것은 비용이 많이 드는 작업이기 때문에 성능 저하를 초래할 수 있음
 
