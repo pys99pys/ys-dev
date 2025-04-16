@@ -1,3 +1,5 @@
+# HTTP Method - PATCH, TRACE, CONNECT
+
 ## HEAD
 
 헤더만 요청할 때 사용, 멱등(idempotent) o, 안전(safe) o
