@@ -22,3 +22,18 @@ x = 123456789
 - x.toString().split("").reverse().join("")
 - 이건 숫자 하나하나를 다루는 작업이니까 자릿수만큼 반복됨
 - d = 9(9자리 숫자)
+
+**ex**
+
+```
+const reversedStr = "123456789";
+const reversedNum = Number(reversedStr);
+```
+
+내부 동작
+
+```
+"123456" -> 1 × 10⁵ + 2 × 10⁴ + 3 × 10³ + 4 × 10² + 5 × 10¹ + 6 × 10⁰
+```
+
+이므로, O(d)
