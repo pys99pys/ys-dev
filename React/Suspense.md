@@ -10,7 +10,7 @@
 
 ## 동작 원리
 
-핵심 개념 -> Promise Throwing
+**핵심 개념 -> Promise Throwing**
 
 ```
 function MyComponent() {
